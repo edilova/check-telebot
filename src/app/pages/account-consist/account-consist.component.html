@@ -1,0 +1,17 @@
+<div class="account-consist p-4">
+  <h4 class="text-center title my-3">❗️Найдены подписки на сомнительные ресурсы</h4>
+  <p class="sub-title text-center mb-4">Рекомендуем вам отписаться от этих сообществ</p>
+  <div *ngFor="let link of links">
+    <div class="d-flex">
+      <p class="fw-bold ml-1 mb-1">Сообщество:</p>
+      <p class="mx-1 mb-1 text-break">{{link.community}}</p>
+    </div>
+    <div class="d-flex">
+      <p class="fw-bold mb-1">
+        Ссылка: <a class="break">{{link.link}}</a>
+      </p>
+    </div>
+    <div class="dropdown-divider"></div>
+  </div>
+  <button class="btn-style w-100 mt-4" type="submit" routerLink="/account-check">Вернуться</button>
+</div>

@@ -1,0 +1,14 @@
+.account-check {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-control {
+  background-color: #eff0f6;
+  border: none;
+  min-height: 5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+}
+

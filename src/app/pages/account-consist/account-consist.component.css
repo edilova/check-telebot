@@ -1,0 +1,11 @@
+.account-consist {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.account-consist .break {
+  word-break: break-all;
+  color: #000000;
+  font-weight: normal;
+}

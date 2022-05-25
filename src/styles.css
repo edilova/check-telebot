@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.sub-title {
+  font-size: 1.2rem;
+  line-height: 34px;
+  word-wrap: break-word;
+  margin: 5px;
+}
+.tip-title {
+  color: #8d8d8d;
+}
+.btn-style {
+  height: 4em;
+  border-radius: 16px;
+  border: none;
+  background-color: #5f2eea;
+  color: #fff;
+  font-weight: bold;
+}
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #a0a3bd;
+}
+
+.error-text {
+  color: red;
+}
+.error {
+  border: 1px solid red !important;
+}

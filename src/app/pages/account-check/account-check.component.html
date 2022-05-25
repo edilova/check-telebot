@@ -1,0 +1,23 @@
+<div class="account-check p-4">
+  <h2 class="text-center title my-3">Проверка аккаунта</h2>
+  <p class="sub-title text-center">Для проверки введите ссылку на ваш аккаунт из социальной сети VK или Instagram.
+    В день вы можете проверить до 5 аккаунтов</p>
+  <p class="sub-title tip-title text-center" *ngIf="!showExample" (click)="showExample = true">Показать пример</p>
+  <p class="sub-title tip-title text-center" *ngIf="showExample" (click)="showExample = false">Скрыть пример</p>
+  <ul class="sub-title tip-title" *ngIf="showExample">
+    <li>https://vk.com/id606811883 </li>
+    <li>https://www.instagram.com/dib_almaty_udr_almaty/</li>
+  </ul>
+  <form [formGroup]="linkForm">
+    <div class="form-group">
+      <textarea class="form-control" [ngClass]="{'error': formErrors.url}" id="exampleFormControlTextarea1" rows="3" placeholder="Введите ссылку на аккаунт" formControlName="url"></textarea>
+      <div class="invalid-feedback">
+        Please enter a message in the textarea.
+      </div>
+      <span class="error-text" *ngIf="formErrors.url">Обязательное поле</span>
+
+
+    </div>
+  </form>
+  <button class="btn-style w-100 mt-4" type="submit" routerLink="/account-doesnt-consist">Проверить</button>
+</div>

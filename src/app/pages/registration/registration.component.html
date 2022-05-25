@@ -1,0 +1,10 @@
+<div class="registration p-4">
+  <h2 class="text-center title my-5">Регистрация</h2>
+  <form class="registration-form" [formGroup]="registrationForm">
+    <input class="form-control" type="text" name="language" id="language" formControlName="language_code" placeholder="Язык" required>
+    <input class="form-control" type="text" name="name" id="name" formControlName="name" placeholder="Имя" required>
+    <input class="form-control" [ngClass]="{'error': formErrors.telephone}" type="number" name="phone" id="phone" formControlName="telephone" placeholder="Телефон" (blur)="phoneValidationErrors()">
+    <span class="error-text" *ngIf="formErrors.telephone">Обязательное поле</span>
+    <button class="btn-style w-100 mt-4" (click)="submit(registrationForm.value)">Отправить</button>
+  </form>
+</div>

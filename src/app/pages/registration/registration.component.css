@@ -1,0 +1,13 @@
+.registration {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-control {
+  background-color: #eff0f6;
+  border: none;
+  height: 4rem;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+}
